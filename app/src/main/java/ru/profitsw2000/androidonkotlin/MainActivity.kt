@@ -17,7 +17,8 @@ class MainActivity : AppCompatActivity() {
         val button: Button = findViewById(R.id.button_listener) ;
         button.setOnClickListener{
             clickMessage.visibility = View.VISIBLE  ;
-            clickMessage.text = "Button clicked!!!" ;
+            val animal = Animal("Cat", "Bob", 5)
+            clickMessage.text = animal.kind + ", " + animal.name + ", " + animal.age;
         }
     }
 }
