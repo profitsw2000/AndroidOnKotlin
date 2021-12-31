@@ -31,15 +31,9 @@ class MainActivity : AppCompatActivity() {
             val animal = Animal("Cat", "Bob", 5)
             clickMessage.text = animal.kind + ", " + animal.name + ", " + animal.age;
 
-            //create object, copy() and display it
-            val dog = object {
-                val name = "Bark"
-                val age = 3
-                fun copy(){
-                    output.text = "Dog name is $name and it is $age years old"
-                }
-            }   ;
-            dog.copy()  ;
+            //copy object and display it
+            val animalCopy = animal.copy("Cat","Garny", 6)
+            output.text = "Cat name is ${animalCopy.name} and it is ${animalCopy.age} years old"
         }
     }
 }
