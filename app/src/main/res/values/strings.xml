@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidOnKotlin</string>
+    <string name="listener_button_text">Listener</string>
 </resources>
