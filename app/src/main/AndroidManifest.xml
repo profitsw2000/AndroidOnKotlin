@@ -12,8 +12,6 @@
         <receiver
             android:name="ru.profitsw2000.MessageReceiver"
             android:enabled="true"
-            android:exported="true"></receiver>
-        <receiver android:name="ru.profitsw2000.MessageReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="ru.profitsw2000.message.sender" />
